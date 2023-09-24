@@ -1,0 +1,8 @@
+
+<h1> Films</h1>
+<div class="film-list-container">
+    <ng-container *ngFor="let film of filmsList; index as i">
+        <app-film-summary-card [film]="film" [index]="i"></app-film-summary-card>
+    </ng-container>
+</div>
+
